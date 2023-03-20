@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Page = () => {
 	return (
 		<div className='max-w-4xl mx-auto px-4'>
-			<div className='h-screen pt-20'>
+			<div className='h-screen flex items-center pb-12'>
 				<h1 className='text-3xl leading-10 tracking-wide font-bold text-center'>
 					ひとりごとのように
 					<br />
