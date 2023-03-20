@@ -84,7 +84,21 @@ const Page = () => {
 					<h3 className='text-xl font-bold mt-6'>
 						### ひとりごとページの使い方
 					</h3>
-					<p className='mt-4'></p>
+					<p className='mt-4'>
+						テキストを入力して、思いついたままに叩き出してみましょう。
+					</p>
+					<p className='mt-4'>
+						ひとりごとのフローとして
+						<div>
+							トピック
+							<br />
+							↓<br />
+							小さな問い → 乱雑なひとりごと → 小さな結論 → 次の小さな問い → ...
+							↓<br />
+							トピックに対する結論
+						</div>
+						のように進めていきます。（各役割を扱いやすくする機能は未実装です）
+					</p>
 
 					<p className='mt-4'>
 						未実装の機能が多いため、下記の「今後の追加予定の機能」を確認してください。
@@ -93,7 +107,7 @@ const Page = () => {
 			</section>
 
 			<section className='py-20 border-t border-gray-300'>
-				<h2 className='text-2xl font-bold'>今後の追加予定の機能</h2>
+				<h2 className='text-2xl font-bold'>## 今後の追加予定の機能</h2>
 				<div className='mt-6 text-base tracking-wide'>
 					<h3 className='text-xl font-bold mt-6'>### トピック一覧ページ</h3>
 					<ul className='list-disc ml-6 mt-2'>
