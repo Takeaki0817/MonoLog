@@ -62,7 +62,7 @@ const ChatRoom = () => {
 	}, [roomId]);
 
 	return (
-		<div className='bg-slate-100 flex flex-col min-h-0 h-full max-w-3xl mx-auto'>
+		<div className='bg-slate-100 flex flex-col min-h-0 h-full w-full max-w-3xl mx-auto'>
 			<div className='p-4'>
 				<h2 className='text-xl font-bold px-4 py-2 flex gap-2 items-center bg-white rounded-full'>
 					#<span>{roomName}</span>

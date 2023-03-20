@@ -66,7 +66,7 @@ const ChatRoomList = () => {
 	};
 
 	return (
-		<div className='bg-slate-100 flex flex-col min-h-0 h-full max-w-3xl mx-auto'>
+		<div className='bg-slate-100 flex flex-col min-h-0 h-full w-full max-w-3xl mx-auto'>
 			<div className='p-4'>
 				<AddChatRoom />
 			</div>
