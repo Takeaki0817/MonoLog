@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Page = () => {
 	return (
 		<div className='max-w-4xl mx-auto px-4'>
-			<div className='h-screen h-[100svh] flex flex-col justify-center pb-12'>
+			<div className='h-screen flex flex-col justify-center pb-12'>
 				<h1 className='text-3xl leading-10 tracking-wide font-bold text-center'>
 					ひとりごとのように
 					<br />
@@ -87,16 +87,18 @@ const Page = () => {
 					<p className='mt-4'>
 						テキストを入力して、思いついたままに叩き出してみましょう。
 					</p>
+					<p className='mt-4'>ひとりごとのフローとして</p>
+					<div className='mt-4 pl-3 border-l-4 border-gray-200'>
+						トピック
+						<br />
+						↓<br />
+						小さな問い → 乱雑なひとりごと → 小さな結論 → 次の小さな問い → ...
+						<br />
+						↓
+						<br />
+						トピックに対する結論
+					</div>
 					<p className='mt-4'>
-						ひとりごとのフローとして
-						<div>
-							トピック
-							<br />
-							↓<br />
-							小さな問い → 乱雑なひとりごと → 小さな結論 → 次の小さな問い → ...
-							↓<br />
-							トピックに対する結論
-						</div>
 						のように進めていきます。（各役割を扱いやすくする機能は未実装です）
 					</p>
 
