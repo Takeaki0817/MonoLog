@@ -34,7 +34,7 @@ const AddChatMessage = () => {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className='px-4 flex justify-between bg-white rounded-full drop-shadow overflow-hidden'
+			className='px-4 py-2 flex justify-between bg-white rounded-full drop-shadow'
 		>
 			<input
 				type='text'

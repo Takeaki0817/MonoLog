@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					<Header />
 				</div>
 				<div
-					className='bg-slate-100 h-screen flex flex-col min-h-0'
+					className='bg-slate-100 h-screen h-[100svh] flex flex-col min-h-0'
 					style={{ height: `${headerHeight}` }}
 				>
 					<style jsx global>{`
