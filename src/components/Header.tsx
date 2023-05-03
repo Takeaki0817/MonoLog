@@ -5,8 +5,6 @@ import { getAuth, signOut } from 'firebase/auth';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-// import SearchBar from '@/components/SerchBar';
-
 export const Header = () => {
 	const { user } = useAuthContext();
 	const toast = useToast();
