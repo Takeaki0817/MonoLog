@@ -1,36 +1,36 @@
-import { useToast } from '@chakra-ui/react'
-import { useAuthContext } from '@/components/auth/AuthProvider'
-import { FirebaseError } from '@firebase/util'
-import { getAuth, signOut } from 'firebase/auth'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
+import { useToast } from '@chakra-ui/react';
+import { useAuthContext } from '@/components/auth/AuthProvider';
+import { FirebaseError } from '@firebase/util';
+import { getAuth, signOut } from 'firebase/auth';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export const Header = () => {
-	const { user } = useAuthContext()
-	const toast = useToast()
-	const { push } = useRouter()
+	const { user } = useAuthContext();
+	const toast = useToast();
+	const { push } = useRouter();
 
 	const handleSignOut = async () => {
 		try {
-			const auth = getAuth()
+			const auth = getAuth();
 
-			await signOut(auth)
+			await signOut(auth);
 			toast({
 				title: 'ログアウトしました。',
 				status: 'success',
 				position: 'top',
-			})
-			push('/signin')
+			});
+			push('/signin');
 		} catch (error) {
 			if (error instanceof FirebaseError) {
-				console.log(error)
+				console.log(error);
 			}
 		}
-	}
-	const auth = getAuth()
-	const userId = auth.currentUser?.uid
+	};
+	const auth = getAuth();
+	const userId = auth.currentUser?.uid;
 
-	const router = useRouter()
+	const router = useRouter();
 
 	return (
 		<header className='flex flex-wrap  sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700'>
@@ -99,5 +99,5 @@ export const Header = () => {
 				</div>
 			</nav>
 		</header>
-	)
-}
+	);
+};
