@@ -56,7 +56,7 @@ export const Header = () => {
 									clipRule='evenodd'
 								/>
 							</svg>
-							もどる
+							戻る
 						</Link>
 					) : (
 						<h1>
